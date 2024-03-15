@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #084357;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 300px;
+}
+
+.scores {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center
+}
+
+.input-wrapper input {
+  display: block;
+  font-size: 40px;
+  padding: 10px 20px;
+  width: 250px;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #000;
+}
+
+.input-wrapper button {
+  font-size: 40px;
+  padding: 10px 20px;
+  border-radius: 0 10px 10px 0;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-left: none;
+  font-weight: 800;
+}
+
+.input-wrapper input:focus,
+.input-wrapper button:focus {
+  outline: 2px solid #0691c0;
+}
+
+table {
+  margin: auto;
+  font-size: 24px;
+  font-weight: normal;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  font-weight: 400;
+  padding: 20px 45px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+th {
+  font-weight: 600;
+}
+
+.historyWrapper {
+  margin-top: 20px;
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 500px) {
+  .scores, table {
+    font-size: 20px;
+  }
+
+  .input-wrapper input,
+  .input-wrapper button {
+  font-size: 28px;
+  }
+
+  .input-wrapper input {
+    width: 180px;
+  }
+
+}
